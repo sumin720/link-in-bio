@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Sumin Thomas's Links</title>
+  <!-- Include Font Awesome for social icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   <style>
-    * {
-      border: 1px red dashed; /* Remove if not for debugging */
-    }
-
     /* Ensure page takes full height */
     html, body {
       min-height: 100%;
@@ -20,14 +18,18 @@
     body {
       padding-top: 40px;
       padding-bottom: 40px;
-      background: radial-gradient(circle at 100% 10%, #ffdf42, #ffcb2a, #ffb60e, #ffa000, #ff8900, #ff6f00, #ff5000, #ff2212);
+      background: linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
       font-family: "Helvetica";
       color: rgba(255, 255, 255, 1.0);
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
+/*
+* {
+  border: 1px red dashed;
+}
+*/
     /* Container to center-align content */
     .main-container {
       max-width: 640px;
@@ -49,7 +51,6 @@
       font-size: 24px;
       font-weight: 900;
       text-align: center;
-      font-family: "Helvetica";
       margin-bottom: 30px;
     }
 
@@ -57,7 +58,8 @@
     .social-icons-row {
       margin-bottom: 30px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 20px; /* Add space between icons */
     }
 
     /* Link styling */
@@ -73,7 +75,12 @@
       display: flex;
       align-items: center;
       padding: 10px;
-      border-radius: 8px;
+      border-radius: 1000px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+    # background-color: rgba(149, 123, 173, 0.5);
+    # border-radius: 1000px;
+    # padding: 5px;
+    # padding-right: 53px;
     }
 
     /* Thumbnail styling */
@@ -96,14 +103,18 @@
 <body>
   <div class="main-container">
     <div class="image-row">
-      <img src="thumbnails/sumin.jpg" alt="Sumin Thomas headshot" class="avatar-image">
+      <img src="thumbnails/sumin1.png" alt="Sumin Thomas headshot" class="avatar-image">
     </div>
     <div class="name-row">
       Sumin Thomas
     </div>
     <div class="social-icons-row">
-      <a href="https://www.linkedin.com/in/sumint/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/sumin720" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/sumint/" target="_blank">
+        <i class="fab fa-linkedin"></i> <!-- Font Awesome LinkedIn icon -->
+      </a>
+      <a href="https://github.com/sumin720" target="_blank">
+        <i class="fab fa-github"></i> <!-- Font Awesome GitHub icon -->
+      </a>
     </div> <!-- social-icons-row -->
     <div class="links-row">
       <div class="item">
