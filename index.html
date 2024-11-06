@@ -1,32 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-
-  <title>Sumin Thomas's links</title>
-
+  <title>Sumin Thomas's Links</title>
   <style>
     * {
-      border: 1px red dashed;
+      border: 1px red dashed; /* Remove if not for debugging */
     }
 
+    /* Ensure page takes full height */
+    html, body {
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styling */
     body {
       padding-top: 40px;
       padding-bottom: 40px;
+      background: radial-gradient(circle at 100% 10%, #ffdf42, #ffcb2a, #ffb60e, #ffa000, #ff8900, #ff6f00, #ff5000, #ff2212);
+      font-family: "Helvetica";
+      color: rgba(255, 255, 255, 1.0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    /* Container to center-align content */
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Styling for avatar image */
     .avatar-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
-      border-radius: 128px;
+      border-radius: 50%;
+      margin-bottom: 20px;
     }
 
+    /* Name styling */
+    .name-row {
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      font-family: "Helvetica";
+      margin-bottom: 30px;
+    }
+
+    /* Social icon row styling */
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* Link styling */
+    a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+    }
+
+    /* Item box styling */
+    .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    /* Thumbnail styling */
     .thumbnail {
       width: 48px;
       height: 48px;
-      border-radius: 48px;
+      border-radius: 50%;
       object-fit: cover;
+      margin-right: 10px;
+    }
+
+    /* Centering link text */
+    .link-text {
+      flex-grow: 1;
+      text-align: center;
     }
   </style>
 </head>
@@ -34,26 +96,19 @@
 <body>
   <div class="main-container">
     <div class="image-row">
-      <img src="/sumin.jpg" alt="Sumin Thomas headshot" class="avatar-image">
+      <img src="thumbnails/sumin.jpg" alt="Sumin Thomas headshot" class="avatar-image">
     </div>
     <div class="name-row">
       Sumin Thomas
     </div>
     <div class="social-icons-row">
-      <a href="https://www.linkedin.com/in/sumint/" target="_blank">
-        LinkedIn
-      </a>
-      
-      <a href="https://github.com/sumin720" target="_blank">
-        GitHub
-      </a>
-
+      <a href="https://www.linkedin.com/in/sumint/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/sumin720" target="_blank">GitHub</a>
+    </div> <!-- social-icons-row -->
     <div class="links-row">
       <div class="item">
-        <img class="thumbnail" src="/youtube_icon.jpg">
-        <a target="_blank" href="https://youtu.be/h6fcK_fRYaI?si=DseCW2rmpDYWy7zE">
-          The Egg
-        </a>
+        <img src="thumbnails/youtube_icon.jpg" class="thumbnail" alt="YouTube Icon">
+        <a class="link-text" target="_blank" href="https://youtu.be/h6fcK_fRYaI?si=DseCW2rmpDYWy7zE">The Egg</a>
       </div>
     </div> <!-- links-row -->
   </div> <!-- main-container -->
